@@ -1,6 +1,6 @@
 properties([pipelineTriggers([githubPush()])])
 
-def acrUrl = '<acr-name>.azurecr.io'
+def acrUrl = 'mkdockerci.azurecr.io'
 def gitHubRepoUrl = '<github-repo-url>'
 def image = "${acrUrl}/host-id"
 def shortCommit = ''
